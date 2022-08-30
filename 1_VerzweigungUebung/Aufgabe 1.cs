@@ -9,3 +9,5 @@ Console.WriteLine(x -= 10);               //Ausgabe -2
 Console.WriteLine(x-- == y & true);     //Ausgabe False
 Console.WriteLine(!(z == 6) | false);   //Ausgabe False
 Console.WriteLine((x *= -2) == z);        //Ausgabe True
+
+//test
