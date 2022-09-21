@@ -11,6 +11,9 @@ static void Aufgabe1()
 { 
     string sHöhe = "Höhe", sBreite = "Breite";
     float fHöhe = 32.346F, fBreite = 15.193F;
+    
+    Console.WriteLine("{0,10}{1,10}", sHöhe, sBreite)
+    Console.WriteLine("{0,10:F1}{1,10:F1}", fHöhe, fBreite)
 
     Console.WriteLine("{0,10}{1,10}\n", sHöhe, sBreite);
     Console.WriteLine("{0,10:F1}{1,10:F1}\n", fHöhe, fBreite);
