@@ -49,14 +49,17 @@ static void Aufgabe5()
     Console.Write("Wie viel beträgt der Umsatz: ");
     umsatz = Convert.ToDouble(Console.ReadLine());
 
-    if (umsatz >= 100 && umsatz <= 499)
+    if (umsatz > 100 && umsatz <= 500)
     {
         nachAbzug = umsatz - umsatz * 0.05;
-        Console.WriteLine("Der reduzierte betrag ist " + nachAbzug + " Euro");
+        Console.WriteLine("Der reduzierte betrag ist {0:F2} Euro", nachAbzug);
     }
-    else if (umsatz >= 500)
+    else if (umsatz >= 501)
     {
         nachAbzug = umsatz - umsatz * 0.10;
-        Console.WriteLine("Der reduzierte betrag ist " + nachAbzug + " Euro");
+        Console.WriteLine("Der reduzierte betrag ist {0:F2} Euro", nachAbzug);
+    } else
+    {
+        Console.WriteLine("Mit einem Betrag von {0:F2} gibt es leider kein Rabatt", umsatz);
     }
 }
