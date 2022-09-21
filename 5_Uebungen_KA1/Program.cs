@@ -6,16 +6,14 @@ Aufgabe3();
 Console.WriteLine("\n");
 Aufgabe5();
 
+
 static void Aufgabe1() 
 { 
     string sHöhe = "Höhe", sBreite = "Breite";
     float fHöhe = 32.346F, fBreite = 15.193F;
 
-    Console.WriteLine("  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20");
-    Console.WriteLine("1             H ö h e              B  r  e  i  t  e ");
-    Console.WriteLine("2                                                   ");
-    Console.WriteLine("3             3 2 , 3                    1  5  ,  2 ");
-    Console.WriteLine("4                                                   ");
+    Console.WriteLine("{0,10}{1,10}\n", sHöhe, sBreite);
+    Console.WriteLine("{0,10:F1}{1,10:F1}\n", fHöhe, fBreite);
 }
 
 static void Aufgabe2() 
