@@ -1,4 +1,5 @@
-﻿Aufgabe1();
+﻿Console.ForegroundColor = ConsoleColor.Green;
+Aufgabe1();
 Console.WriteLine("\n");
 Aufgabe2();
 Console.WriteLine("\n");
@@ -49,15 +50,15 @@ static void Aufgabe5()
     Console.Write("Wie viel beträgt der Umsatz: ");
     umsatz = Convert.ToDouble(Console.ReadLine());
 
-    if (umsatz > 100 && umsatz <= 500)
+    if (umsatz > 100 & umsatz <= 500)
     {
         nachAbzug = umsatz - umsatz * 0.05;
-        Console.WriteLine("Der reduzierte betrag ist {0:F2} Euro", nachAbzug);
+        Console.WriteLine("Der reduzierte betrag ist {0:F2} Euro. 5% Rabatt", nachAbzug);
     }
     else if (umsatz >= 501)
     {
         nachAbzug = umsatz - umsatz * 0.10;
-        Console.WriteLine("Der reduzierte betrag ist {0:F2} Euro", nachAbzug);
+        Console.WriteLine("Der reduzierte betrag ist {0:F2} Euro 10% Rabatt", nachAbzug);
     } else
     {
         Console.WriteLine("Mit einem Betrag von {0:F2} gibt es leider kein Rabatt", umsatz);
