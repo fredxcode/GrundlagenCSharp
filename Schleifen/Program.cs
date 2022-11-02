@@ -10,8 +10,8 @@ static void Kontostand()
     int i = 1000;
     do
     {
-        i -= 100;
         Console.WriteLine(i);
+        i -= 100;
     } while (i >= 100) ;
 }
 static void Namesprüfung()
